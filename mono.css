@@ -1,0 +1,486 @@
+* {
+    box-sizing: border-box;
+    font-family: 'AR One Sans', sans-serif;
+    font-weight: 100;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: rgb(18, 17, 17);
+}
+
+h1 {
+    color: azure;
+    font-style: italic;
+    font-size: 40px;
+    margin: 0;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    background-color: black;
+    padding: 10px 0;
+    z-index: 99;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+.header img {
+    width: 50px;
+    margin-right: 10px;
+    border-radius: 50px;
+}
+
+.header form {
+    padding-left: 30px;
+}
+
+.header .fa {
+    color: black;
+    margin-right: 30px;
+    z-index: 2;
+    position: relative;
+    right: 23px;
+    font-size: 20px;
+}
+
+.header span .fa {
+    color: aliceblue;
+    left: 40px;
+    top: 34px;
+}
+
+.header span h3 a {
+    color: aliceblue;
+    left: 65px;
+    position: relative;
+    bottom: 10px;
+    text-decoration: none;
+}
+
+
+.header span h3 a:hover {
+    color: rgb(21, 177, 228);
+
+}
+
+.header form input {
+    padding-left: 10px;
+    width: 500px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+
+.header-buttons {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px; 
+    left: 400px;
+}
+
+.signup-button, .signin-button {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    
+    font-family: 'AR One Sans', sans-serif;
+
+}
+
+
+.signup-button {
+    background-color: white;
+    color: black;
+    border-right: 2px solid black; 
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.signup-button:hover {
+    background-color: #f1f1f1; 
+}
+
+
+.signin-button {
+    background-color: black;
+    color: white;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.signin-button:hover {
+    background-color: #333; 
+}
+
+
+.sidebar {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    top: 80px;
+    left: 0;
+    background-color: black;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 10px;
+    margin-left: 10px;
+}
+
+.sidebar ul li {
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar-item {
+    display: flex;
+    align-items: center;
+}
+
+.sidebar ul li i {
+    color: aliceblue;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.sidebar ul li a:hover {
+    color: rgb(21, 177, 228);
+}
+
+.bannermono {
+    position: relative;
+    top: 130px;
+    left: 210px;
+    background: transparent;
+    filter: brightness(0.8);
+    height: 200px;
+}
+
+.bannermono img {
+    border-radius: 20px;
+}
+
+.intro {
+    position: relative;
+    bottom: 200px;
+    left: 220px;
+    padding-top: 10px;
+    color: #f1f1f1;
+}
+
+.intro p {
+    font-size: large;
+}
+
+.banner-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    width: 800px;
+    height: 45px;
+    position: relative;
+    left: 220px;
+    bottom: 180px;
+}
+
+.banner-buttons button {
+    background-color: rgb(111, 109, 109);
+    border: none;
+    border-radius: 30px;
+    color: white;
+    cursor: pointer;
+    transition: color 0.3s;
+    padding: 10px;
+    font-size: 17px;
+}
+
+.banner-buttons button i {
+    margin-right: 5px;
+}
+
+.banner-buttons button:hover {
+    color: aqua;
+}
+
+.listmono {
+    position: relative;
+    top: 115px;
+    left: 200px;
+    font-family: 'AR One Sans', sans-serif;
+    box-sizing: border-box;
+    height: 1200px;
+}
+
+.monotitle {
+    color: white;
+    height: 50px;
+    background-color: transparent;
+}
+
+.monotitle .title {
+    position: relative;
+    left: 180px;
+    top: 25px;
+}
+
+.monotitle .plays {
+    position: relative;
+    left: 650px;
+    bottom: 30px;
+}
+
+.listmono audio::-webkit-media-controls-panel {
+    background-color: rgb(106, 106, 106);
+}
+
+.listmono button {
+    background: rgb(28, 28, 28);
+    color: white;
+    filter: brightness(0.8);
+    box-sizing: border-box;
+    width: 85%;
+    border: none;
+    position: relative;
+    top: 5px;
+    left: 13px;
+}
+
+.listmono .mono .playAudio .text,
+.listmono .mono1 .playAudio .text,
+.listmono .mono2 .playAudio .text,
+.listmono .mono3 .playAudio .text,
+.listmono .mono4 .playAudio .text,
+.listmono .mono5 .playAudio .text,
+.listmono .mono6 .playAudio .text,
+.listmono .mono7 .playAudio .text {
+    font-size: 16px;
+    float: left;
+    margin: 18px 0px;
+    position: relative;
+    left: 100px;
+}
+
+.listmono .mono .playAudio .fa,
+.listmono .mono1 .playAudio .fa,
+.listmono .mono2 .playAudio .fa,
+.listmono .mono3 .playAudio .fa,
+.listmono .mono4 .playAudio .fa,
+.listmono .mono5 .playAudio .fa,
+.listmono .mono6 .playAudio .fa,
+.listmono .mono7 .playAudio .fa {
+    font-size: 20px;
+    position: relative;
+    right: 160px;
+    bottom: 16px;
+    font-weight: 400;
+   
+}
+
+.text:hover{
+    color: aqua;
+}
+i:hover{
+    color: aqua;
+}
+.playAudio span .fa{
+    left: 130px;
+    margin-left: 20px;
+    
+ }
+.audioElement {
+    position: relative;
+    right: 300px;
+    border: none;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.text:hover + .audioElement {
+    opacity: 1;
+}
+
+button:hover {
+    background: rgb(106, 106, 106);
+}
+
+.mo-no  {
+    margin-top: 40px;
+    margin-left: 225px;
+    margin-bottom: 20px;
+    position: relative;
+    right: 210px;
+    color: aliceblue;
+}
+
+.mo-no .mo-no1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.mo-no .mo-no1 span {
+    display: flex;
+    position: relative;
+
+}
+
+.mo-no .mo-no1 img {
+    display: flex;
+    margin-bottom: 10px;
+    position: relative;
+    margin-right: 4.5px;
+    border-radius: 20px;
+}
+
+
+
+.mo-no .mo-no1 span:hover .play{display: block} .play{
+    position: absolute;
+    display: none;
+    left: 70px;
+    top: 70px;
+    z-index: 100;
+    justify-content: center;
+}
+
+.mo-no .mo-no1 span:hover {
+    transform: scale(1.1); 
+    transition: 0.5s;
+}
+
+.alsolike .mo-no2 span:hover .play{display: block} .play{
+    position: absolute;
+    display: none;
+    left: 70px;
+    top: 70px;
+    z-index: 100;
+    justify-content: center;
+}
+
+.alsolike .mo-no2 span:hover {
+    transform: scale(1.1); 
+    transition: 0.5s;
+}
+.alsolike {
+    margin-top: 40px;
+    margin-left: 225px;
+    position: relative;
+    right: 210px;
+    color: aliceblue;
+}
+
+.alsolike .mo-no2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.alsolike .mo-no2 span {
+    display: flex;
+    position: relative;
+}
+
+.alsolike .mo-no2 img {
+    display: flex;
+    margin-bottom: 10px;
+    position: relative;
+    margin-right: 4.5px;
+    border-radius: 20px;
+}
+
+
+footer {
+    position: relative;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    box-sizing: border-box;
+    height: 150px;
+    top: 50px;
+    
+}
+
+.footer-content {
+    display: flex;
+   
+}
+
+.footer-logo{
+    box-sizing: border-box;
+    position: relative;
+    left: 30px;
+    
+}
+.footer-logo img {
+    border-radius: 50px;
+   
+}
+
+.footer-logo h1 {
+    position: relative;
+   
+}
+
+.social-icons{
+    box-sizing: border-box;
+    height: 30px;
+    position: relative;
+    left: 950px;
+    top: 50px;
+    
+}
+.social-icons a {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    margin: 0 15px;
+}
+
+.app-download {
+    position: relative;
+    left: 475px;
+    box-sizing: border-box;
+    width: 350px;
+    bottom: 70px;
+}
+
+.app-download a {
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.app-download img {
+    width: 150px;
+}
+
+.footer-text {
+    position: relative;
+    font-size: 20px;
+    right: 100px;
+    bottom: 60px;
+}
+
+.social-icons a:hover {
+    color: #669999;
+}
